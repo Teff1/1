@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View All Lists</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="left-menu">
+        <h2>Menu</h2>
+        <div id="date-time">
+            Date and Time
+        </div>
+        <button class="menu-button" id="createButton">Create</button>
+        <button class="menu-button" onclick="deleteAllArchivedLists()">Delete All Archived Lists</button>
+    </div>
+
+    <div id="all-lists-container">
+        <h1>All Shopping Lists</h1>
+
+        <div id="all-lists" class="archive-container">
+            <!-- Archived shopping lists will be displayed here as tables -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="view-all.js"></script>
+</body>
+
+</html>

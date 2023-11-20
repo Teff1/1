@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="left-menu">
+        <h2>Menu</h2>
+        <div id="date-time">
+            Date and Time
+        </div>
+        <button class="menu-button" onclick="openLoginPopup()">Log in</button> <!-- Log In if person is Owner of the list -->
+        <button class="menu-button" id="createButton">Create</button> <!-- Create new shopping list -->
+        <button class="menu-button" onclick="archiveCurrentList()">Archive Current List</button>
+        <button class="menu-button" onclick="viewAllLists()">View all</button> <!-- View all shopping lists -->
+    </div>
+
+    <div id="shopping-list-container">
+        <h1>My Shopping List</h1>
+
+        <form id="shopping-list-form">
+            <input type="text" id="item" placeholder="Enter an item" />
+            <input type="text" id="quantity" placeholder="Quantity" />
+            <input type="text" id="price" placeholder="Price" />
+            <button type="button" id="add-button">Add</button>
+        </form>
+
+        <div id="shopping-list">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Checkbox</th>
+                </tr>
+                <tbody id="shopping-list-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="overlay" onclick="closeLoginPopup()"></div>
+    <div id="login-popup">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <br>
+        <button onclick="performLogin()">Login</button>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <script>
+
+        function viewAllLists() {
+            // Redirect to view-all.html
+            window.location.href = "view-all.html";
+        }
+    </script>
+</body>
+
+</html>
