@@ -1,1 +1,1 @@
-Toto je stále nedokončený program, ale už funguje. Stále chybějí některé funkce, které jste žádal, ale určitě je přidám (s některými funkcemi program stále nefunguje, neustále se někde objevuje neznámá chyba).
+--
